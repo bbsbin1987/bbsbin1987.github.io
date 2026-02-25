@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>联系我们 - 资质办理服务平台</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Microsoft YaHei,sans-serif}
+body{color:#333;background:#f8f9fa}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:0 15px}
+.header{background:#fff;box-shadow:0 2px 5px rgba(0,0,0,.05);position:sticky;top:0;z-index:99}
+.nav{display:flex;justify-content:space-between;align-items:center;height:70px}
+.logo{font-size:22px;font-weight:700;color:#0066cc}
+.menu{display:flex;gap:25px}
+.menu a{font-size:16px;color:#333}
+.menu a:hover{color:#0066cc}
+.mobile-btn{display:none;font-size:24px}
+.section{padding:60px 0;background:#fff}
+.title{text-align:center;margin-bottom:40px}
+.title h2{font-size:28px}
+.info{font-size:16px;line-height:2.2}
+.form{margin-top:30px}
+.form input,.form textarea{width:100%;padding:12px;margin-bottom:15px;border:1px solid #ddd;border-radius:4px}
+.form button{padding:12px 30px;background:#0066cc;color:#fff;border:none;border-radius:4px}
+.footer{background:#222;color:#ccc;padding:40px 0;text-align:center}
+@media(max-width:768px){
+.menu{display:none;flex-direction:column;background:#fff;position:absolute;top:70px;left:0;right:0;padding:20px}
+.menu.show{display:flex}
+.mobile-btn{display:block}
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="container">
+<div class="nav">
+<div class="logo">资质办理服务中心</div>
+<div class="menu" id="menu">
+首页
+关于我们
+服务项目
+新闻中心
+联系我们
+</div>
+<div class="mobile-btn" onclick="menuToggle()">☰</div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="container">
+<div class="title"><h2>联系我们</h2></div>
+<div class="info">
+<p>📞 咨询电话：138 0000 0000</p >
+<p>💬 微信：13800000000</p >
+<p>📍 公司地址：广东省惠州市</p >
+<p>🕒 服务时间：周一至周日 9:00-21:00</p >
+</div>
+
+<div class="form">
+<input type="text" placeholder="您的姓名">
+<input type="text" placeholder="联系电话">
+<textarea rows="5" placeholder="咨询内容"></textarea>
+<button>提交咨询</button>
+</div>
+</div>
+</div>
+
+<div class="footer">
+<p>© 2026 资质办理服务平台 版权所有</p >
+</div>
+
+<script>
+function menuToggle(){document.getElementById("menu").classList.toggle("show")}
+</script>
+</body>
+</html>
