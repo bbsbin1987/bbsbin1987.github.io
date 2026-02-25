@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>首页 - 资质办理服务平台</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Microsoft YaHei,sans-serif}
+body{color:#333;background:#f8f9fa}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:0 15px}
+
+/* 导航 */
+.header{background:#fff;box-shadow:0 2px 5px rgba(0,0,0,.05);position:sticky;top:0;z-index:99}
+.nav{display:flex;justify-content:space-between;align-items:center;height:70px}
+.logo{font-size:22px;font-weight:700;color:#0066cc}
+.menu{display:flex;gap:25px}
+.menu a{font-size:16px;color:#333}
+.menu a:hover{color:#0066cc}
+.mobile-btn{display:none;font-size:24px}
+
+@media(max-width:768px){
+.menu{display:none;flex-direction:column;background:#fff;position:absolute;top:70px;left:0;right:0;padding:20px;box-shadow:0 3px 5px rgba(0,0,0,.1)}
+.menu.show{display:flex}
+.mobile-btn{display:block}
+}
+
+/* banner */
+.banner{background:linear-gradient(90deg,#0066cc,#0099ff);color:#fff;padding:80px 0}
+.banner h1{font-size:36px;margin-bottom:20px}
+.banner p{font-size:18px;line-height:1.7;margin-bottom:30px;max-width:600px}
+.btn{display:inline-block;padding:12px 30px;background:#fff;color:#0066cc;border-radius:4px;font-weight:500}
+
+/* 服务 */
+.section{padding:60px 0;background:#fff}
+.title{text-align:center;margin-bottom:40px}
+.title h2{font-size:28px;margin-bottom:10px}
+.title p{color:#666}
+.box{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.card{background:#f8f9fa;padding:30px;border-radius:8px;text-align:center}
+.card h3{margin:15px 0}
+.card p{color:#666;line-height:1.6}
+
+@media(max-width:768px){
+.box{grid-template-columns:1fr}
+}
+
+/* 底部 */
+.footer{background:#222;color:#ccc;padding:40px 0;text-align:center}
+</style>
+</head>
+<body>
+
+<div class="header">
+<div class="container">
+<div class="nav">
+<div class="logo">资质办理服务中心</div>
+<div class="menu" id="menu">
+首页
+关于我们
+服务项目
+新闻中心
+联系我们
+</div>
+<div class="mobile-btn" onclick="menuToggle()">☰</div>
+</div>
+</div>
+</div>
+
+<div class="banner">
+<div class="container">
+<h1>专业资质办理 · 高效省心</h1>
+<p>专注各类企业资质、许可证、认证代办，多年行业经验，全程一对一服务，快速下证。</p >
+立即咨询
+</div>
+</div>
+
+<div class="section">
+<div class="container">
+<div class="title">
+<h2>我们的服务</h2>
+<p>专业、高效、靠谱</p >
+</div>
+<div class="box">
+<div class="card">
+<h3>资质代办</h3>
+<p>建筑资质、经营许可证、行业资质快速办理，通过率高。</p >
+</div>
+<div class="card">
+<h3>证书年检</h3>
+<p>各类资质证书年检、延期、变更一站式服务。</p >
+</div>
+<div class="card">
+<h3>政策咨询</h3>
+<p>专业顾问提供最新政策解读与办理方案。</p >
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer">
+<div class="container">
+<p>© 2026 资质办理服务平台 版权所有</p >
+</div>
+</div>
+
+<script>
+function menuToggle(){document.getElementById("menu").classList.toggle("show")}
+</script>
+</body>
+</html>
