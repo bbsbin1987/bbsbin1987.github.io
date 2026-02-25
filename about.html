@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>关于我们 - 资质办理服务平台</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Microsoft YaHei,sans-serif}
+body{color:#333;background:#f8f9fa}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:0 15px}
+.header{background:#fff;box-shadow:0 2px 5px rgba(0,0,0,.05);position:sticky;top:0;z-index:99}
+.nav{display:flex;justify-content:space-between;align-items:center;height:70px}
+.logo{font-size:22px;font-weight:700;color:#0066cc}
+.menu{display:flex;gap:25px}
+.menu a{font-size:16px;color:#333}
+.menu a:hover{color:#0066cc}
+.mobile-btn{display:none;font-size:24px}
+.section{padding:60px 0;background:#fff}
+.title{text-align:center;margin-bottom:40px}
+.title h2{font-size:28px}
+.content{line-height:1.9;font-size:16px;color:#444}
+.footer{background:#222;color:#ccc;padding:40px 0;text-align:center}
+@media(max-width:768px){
+.menu{display:none;flex-direction:column;background:#fff;position:absolute;top:70px;left:0;right:0;padding:20px}
+.menu.show{display:flex}
+.mobile-btn{display:block}
+}
+</style>
+</head>
+<body>
+<div class="header">
+<div class="container">
+<div class="nav">
+<div class="logo">资质办理服务中心</div>
+<div class="menu" id="menu">
+首页
+关于我们
+服务项目
+新闻中心
+联系我们
+</div>
+<div class="mobile-btn" onclick="menuToggle()">☰</div>
+</div>
+</div>
+</div>
+
+<div class="section">
+<div class="container">
+<div class="title"><h2>关于我们</h2></div>
+<div class="content">
+<p>我们是一家专业从事企业资质代办的服务机构，拥有多年行业经验，专业团队全程跟进，为各类企业提供高效、便捷、省心的资质办理服务。</p ><br>
+<p>公司秉承诚信、专业、高效的服务理念，致力于解决企业办证难、流程繁、周期长等痛点，帮助企业快速合法经营。</p ><br>
+<p>业务覆盖：各类经营许可证、建筑资质、行业认证、证书年检、变更、延期等，欢迎企业客户长期合作。</p >
+</div>
+</div>
+</div>
+
+<div class="footer">
+<p>© 2026 资质办理服务平台 版权所有</p >
+</div>
+
+<script>
+function menuToggle(){document.getElementById("menu").classList.toggle("show")}
+</script>
+</body>
+</html>
